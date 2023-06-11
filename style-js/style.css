@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #eee;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.header {
+  background: tomato;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.fa-code {
+  font-size: 40px;
+}
+
+.links ul {
+  list-style: none;
+  margin: 0;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 35px;
+  /* line-height: 100px; */
+}
+
+.links ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu {
+  border-bottom: 1px solid tomato;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #eee;
+}
+
+.menu-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+}
+
+.menu-items ul li a {
+  text-decoration: none;
+  color: tomato;
+}
+.menu-items ul li {
+  display: inline-block;
+  /* margin-left: 10px; */
+
+  padding: 10px 15px;
+  /* font-weight: bold; */
+}
+.category {
+  color: tomato;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.drop {
+  position: absolute;
+  color: White;
+  /* border: 2px solid red; */
+  padding: 10px;
+  background: tomato;
+  margin-top: 10px;
+  width: 100%;
+  display: none;
+}
+.drop::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: tomato;
+  top: -10px;
+  left: 65px;
+  transform: rotateZ(45deg);
+}
+.category:hover .drop {
+  display: block;
+}
+.category i {
+  font-size: 12px;
+}
+.search {
+  margin-right: 20px;
+  border: 0px solid lightgray;
+}
+.search input {
+  margin-right: -20px;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  width: 250px;
+}
+
+.search input:focus {
+  border: 0px solid tomato;
+}
+
+.posts {
+  display: flex;
+  flex-direction: row;
+}
+
+.post {
+  /* border: 2px solid red; */
+  width: 70%;
+  min-height: 1000px;
+  background: whitesmoke;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 6px 18px 30px 2px black;
+}
+
+.post div nav {
+  margin-top: 100px;
+  margin-left: 380px;
+}
+
+.recent-post {
+  /* border: 2px solid red; */
+  width: 30%;
+  height: 80vh;
+  background: whitesmoke;
+  padding-left: 20px;
+  padding-top: 50px;
+  margin-left: 10px;
+  box-shadow: 6px 18px 30px 2px black;
+}
+
+.post h2 {
+  text-align: center;
+}
+
+.cards {
+  height: 200px;
+  width: 100%;
+  background: whitesmoke;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.cards .img {
+  width: 40%;
+}
+
+.cards .content {
+  width: 70%;
+  height: 219px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards img {
+  width: 100%;
+}
+.date i {
+  margin-right: 5px;
+}
+
+.date {
+  color: grey;
+}
+
+.author i {
+  margin-right: 5px;
+}
+.btn {
+  background: tomato;
+  border: 0px solid red;
+  width: 30%;
+}
+.btn:hover {
+  background: rgb(224, 63, 35);
+}
+.desc {
+  padding: 10px 0;
+}
+
+.list {
+  width: 80%;
+  height: 200px;
+}
+
+.author span {
+  font-size: 3.2rem;
+}
+
+.recent-item {
+  font-size: 0.9rem;
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.icon {
+  display: flex;
+}
+
+.side-content {
+  margin-left: 10px;
+}
+
+.cat-item {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.footer {
+  background: tomato;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.footer p {
+  margin: 0;
+}
+
+.full-post {
+  padding: 20px;
+}
+
+.full-img img {
+  width: 100%;
+}
+
+.full-desc {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.full-desc p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+.admin {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.admin-name,
+.logout {
+  margin-left: 5px;
+}
+.active {
+  background: tomato;
+  color: white;
+}
+
+.btn2 {
+  background: red;
+}
+
+.btn1 {
+  background: green;
+}
+
+.btn2:hover {
+  background: rgb(199, 3, 3);
+}
+.btn1:hover {
+  background: rgb(1, 102, 1);
+}
+tr th {
+  background: tomato;
+}
+
+.form-post {
+  display: flex;
+  justify-content: center;
+}
+.page-item a {
+  background: tomato;
+  color: white;
+}
